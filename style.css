@@ -301,7 +301,7 @@
 
 .search-bar>div:nth-child(2)>input {
     height: 3em;
-    width: 45em;
+    width: 30em;
     border: 2px solid white;
     box-sizing: border-box;
 }
@@ -416,8 +416,7 @@
 }
 
 .pimg-container {
-    width: 15%;
-    height: 70%;
+    max-width: 12em;
     display: flex;
     flex-flow: column wrap;
     border: 1px solid lightblue;
@@ -451,4 +450,8 @@
 .pimg-caption>div:nth-child(2) {
     color: crimson;
     margin: 1px;
+}
+
+.object-fit {
+    object-fit: cover;
 }
