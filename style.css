@@ -227,11 +227,16 @@
     margin: 0 0.5em;
     height: 3em;
     width: 10em;
-    box-sizing: border-box;
+    border-width: 1px;
+    border-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.header1-1:hover {
+    border-color: white;
 }
 
 .header1>.header1-1>img {
