@@ -277,55 +277,54 @@
 
 .search-bar {
     display: flex;
-    margin: 0 0.5em;
+    margin: 1em;
     height: 3em;
     align-items: center;
 }
 
 .search-bar>div:nth-child(1)>select {
-    height: 3.5em;
+    height: 3em;
     text-align: center;
-    background-size: 2em 1.5em;
-    background-repeat: no-repeat;
-    background-position: right;
-    border: 0;
+    border: 2px solid rgb(233, 233, 237);
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     box-sizing: border-box;
 }
 
-.search-bar>div:nth-child(1)>select:hover {
-    border: 1px solid pink;
+.search-bar>div:nth-child(1)>select:valid:focus {
+    box-shadow: none;
+    border: 2px solid teal;
 }
 
 .search-bar>div:nth-child(2)>input {
-    height: 3.5em;
-    width: 32em;
-    border: 0;
+    height: 3em;
+    width: 45em;
+    border: 2px solid white;
     box-sizing: border-box;
 }
 
-.search-bar>div:nth-child(3) {
-    object-fit: cover;
+.search-bar>div:nth-child(2)>input:focus {
+    outline: none;
+    border: 2px solid teal;
 }
 
 .search-bar>div:nth-child(3)>input {
-    height: 3.5em;
+    height: 3em;
     width: 3em;
     background-color: rgb(242, 191, 118);
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    background-image: url(lens.png);
-    border: 0;
+    background-image: url(./Images/lens.png);
+    border: 2px solid rgb(242, 191, 118);
     background-size: 2em;
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
 }
 
-.search-bar>div:nth-child(3)>input:hover {
+.search-bar>div:nth-child(3)>input:is(:hover, :focus) {
     background-color: rgb(232, 171, 90);
-    border: 1px solid pink;
+    border: 2px solid teal;
 }
 
 @media (max-width: 40em) {
