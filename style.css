@@ -227,8 +227,8 @@
     margin: 0 0.5em;
     height: 3em;
     width: 10em;
-    border-width: 1px;
-    border-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
