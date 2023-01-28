@@ -239,6 +239,10 @@
     border-color: white;
 }
 
+.header1-1:has(.tmp):hover {
+    border: 1px solid transparent;
+}
+
 .header1>.header1-1>img {
     max-height: 6vh;
 }
@@ -317,7 +321,7 @@
     background-color: rgb(242, 191, 118);
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    background-image: url(./Images/lens.png);
+    background-image: url(../images/lens.png);
     border: 2px solid rgb(242, 191, 118);
     background-size: 2em;
     background-repeat: no-repeat;
